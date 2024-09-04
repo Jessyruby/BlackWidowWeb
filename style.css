@@ -146,7 +146,7 @@ header button:hover {
 .main-banner #title h2 {
     margin-top: -54px;
     color: #fff;
-    background-image: -webkit-linear-gradient(#5d5d5d, #ffffff );
+    background-image: -webkit-linear-gradient(#5d5d5d 25%, #ffffff 80%);
     background-clip: text;
     -webkit-background-clip: text;
     text-fill-color: transparent;
