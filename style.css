@@ -44,7 +44,7 @@ header nav ul li{
     display: inline;
     font-family: "Outfit", sans-serif;
     font-weight: 500;
-    font-size: 10pt;
+    font-size: 10.5pt;
     margin-left: 40px;
     cursor: pointer;
 }
@@ -77,14 +77,14 @@ header button:hover {
 .hidden {
     opacity: 0;
     filter: blur(10px);
-    transition: all 2s;
+    transition: all 1s;
 }
 
 .hiddenXright {
     opacity: 0;
     filter: blur(15px);
     transform: translateX(-100%);
-    transition: all 2s;
+    transition: all 1s;
 }
 
 .hiddenXleft {
@@ -270,7 +270,7 @@ header button:hover {
 
 #hqs-background {
     display: flex;
-    background: #9A0F0F;
+    background: #990f0f;
     height: 530px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset;
     margin-top: -4px;
@@ -278,7 +278,7 @@ header button:hover {
 
 .hqs #background_icon {
     position: absolute;
-    opacity: 8%;
+    opacity: 11%;
     width: 520px;
     left: 480px;
     margin-top: 4px;
