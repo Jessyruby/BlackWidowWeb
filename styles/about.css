@@ -1,0 +1,130 @@
+.about {
+    display: flex;
+    padding: 0;
+}
+
+.about #Rectangle {
+    background: #000;
+    z-index: 2;
+}
+
+.about #title-about{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    z-index: 1;
+}
+
+.about #title-about h2{
+    font-family: "Palanquin", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 75px;
+}
+
+.about #title-about #describe {
+    margin-top: -10px;
+}
+
+.about #title-about p{
+    font-family: "Outfit", sans-serif;
+    font-weight: 200;
+    text-align: justify;
+    opacity: 60%;
+    transition-delay: 400ms;
+}
+
+.about #img-about {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+}
+
+.about #img-about #natasha{
+    width: 90%;
+    filter: brightness(0.9);
+    margin-top: 70px;
+    margin-left: -120px;
+    transition-delay: 100ms;
+}
+
+.about #img-about #portal {
+    position: absolute;
+    width: 170%;
+    height: auto;
+    opacity: 70%;
+    left: -100;
+    margin-top: -50px;
+}
+
+@media (min-width: 768px) {
+
+    .about {
+        height: 800px;
+    }
+
+    .about #Rectangle {
+        width: 150px;
+        height: 700px;
+    }
+
+    .about #Rectangle img{
+        width: 30px;
+        height: 635px;
+        margin-right: -10px;
+        margin-left: 120px;
+        margin-top: 57px;
+    }
+
+    .about #title-about{
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    .about #title-about h2{
+        font-size: 75pt;
+        width: 580px;
+    }
+    
+    .about #title-about p{
+        font-size: 11.2pt;
+        width: 500px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .about {
+        height: 450px;
+        flex-direction: column;
+    }
+
+    .about #Rectangle {
+        display: none;
+    }
+
+    .about #title-about{
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    .about #title-about h2{
+        font-size: 15pt;
+    }
+    
+    .about #title-about p{
+        font-size: 7pt;
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .about #img-about {
+        display: none;
+    }
+    
+}

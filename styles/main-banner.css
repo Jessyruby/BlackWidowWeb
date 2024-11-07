@@ -1,0 +1,109 @@
+.main-banner {
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url('/img/wp6471925-black-widow-3d-desktop-wallpapers.png');
+    background-size: cover;
+}
+
+.main-banner #title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.main-banner #title h1, .main-banner #title h2{
+    color: #fff;
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+.main-banner #title h2 {
+    color: #fff;
+    background-image: -webkit-linear-gradient(#5d5d5d 25%, #ffffff 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-banner #title button {
+    background: #8F0F0F;
+    color: #ffdfdf;
+    border: none;
+    border-radius: 40px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.main-banner #title button:hover {
+    background: #000000;
+    color: #8F0F0F;
+    border: 3px solid #8F0F0F;
+}
+
+.main-banner #bw{
+    margin-left: 20px;
+    z-index: 1;
+}
+
+.main-banner #bw img {
+    width: 750px;
+}
+
+@media (min-width: 768px) {
+
+    .main-banner {
+        height: 780px;
+    }
+
+    .main-banner #title{
+        margin-left: 130px;
+        margin-top: 150px;
+    }
+
+    .main-banner #title h1, .main-banner #title h2{
+        font-size: 90pt;
+    }
+
+    .main-banner #title h2 {
+        margin-top: -54px;
+    }
+
+    .main-banner #title button {
+        padding: 16px 25px;
+        font-size: 11pt;
+        margin-left: -30px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .main-banner {
+        height: 600px;
+        background-position: center; 
+        justify-content: center;
+    }
+
+    .main-banner #title{
+        margin-top: 200px;
+    }
+
+    .main-banner #title h1, .main-banner #title h2{
+        font-size: 44pt;
+        text-align: center;
+    }
+
+    .main-banner #title h2 {
+        margin-top: -30px;
+    }
+
+    .main-banner #title button {
+        padding: 14px 23px;
+        font-size: 10pt;
+    }
+
+}
