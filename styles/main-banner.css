@@ -14,11 +14,12 @@
     font-family: "Outfit", sans-serif;
     font-weight: 700;
     margin: 0;
+  
 }
 
 .main-banner #title h2 {
     color: #fff;
-    background-image: -webkit-linear-gradient(#5d5d5d 25%, #ffffff 80%);
+    background-image: -webkit-linear-gradient(#3d3c3c 25%, #ffffff 50%);
     background-clip: text;
     -webkit-background-clip: text;
     text-fill-color: transparent;
@@ -33,12 +34,12 @@
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     cursor: pointer;
+    border: 3px solid #8F0F0F;
 }
 
 .main-banner #title button:hover {
     background: #000000;
     color: #8F0F0F;
-    border: 3px solid #8F0F0F;
 }
 
 .main-banner #bw{
@@ -64,7 +65,7 @@
     }
 
     .main-banner #title h1, .main-banner #title h2{
-        font-size: 90pt;
+        font-size: 97pt;
     }
 
     .main-banner #title h2 {

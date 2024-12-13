@@ -52,14 +52,12 @@
     height: 431px;
 }
 
-/* Efeito de surgimento */
 .img-principal img.fade-in  {
     opacity: 0;
     transform: scale(0.3);
     transition: opacity 0.2s ease, transform 0.3s ease;
 }
 
-/* Transição suave para a imagem */
 .img-principal img {
     max-width: 120%;
     max-height: 120%;
@@ -78,10 +76,9 @@
 }
 
 .logo {
-    display: none; /* Inicialmente escondido */
+    display: none; 
 }
 
-/* Logo visível */
 .logo.visible {
     display: block;
 }

@@ -42,7 +42,7 @@ elementsY.forEach( (element) => {
 })
 
 
-////////////////////////////
+/////////////////////////////////////////////////////////////////////
 
 const faseItems = document.querySelectorAll('.icons');
 const mainItem = document.querySelector('.img-principal img');
@@ -51,39 +51,29 @@ const logos = document.querySelectorAll('.logo');
 faseItems.forEach(item => {
     
     item.addEventListener('click', () => {
-        // Adiciona a classe de fade-in antes de trocar a imagem
+
         mainItem.classList.add('fade-in');
 
-        // Usa um timeout para permitir que o fade-in ocorra antes da troca da imagem
         setTimeout(() => {
-            // Salvar a imagem atual da div principal
+ 
             const mainSrc = mainItem.src;
-            const logoId = item.getAttribute('data-logo'); // Obtém o ID do logo correspondente
+            const logoIdItem = item.getAttribute('data-logo'); 
+            const logoIdMain = mainItem.getAttribute('data-logo')
 
-            console.log(logoId)
-
-            // Trocar a imagem da div principal pela imagem clicada
             mainItem.src = item.src;
 
-            // Trocar a imagem clicada pela imagem que estava na div principal
             item.src = mainSrc;
+            mainItem.setAttribute('data-logo', logoIdItem)
+            item.setAttribute('data-logo', logoIdMain)
 
-             // Mostrar o logo correspondente
-             logos.forEach(logo => logo.classList.remove('visible')); // Esconde todos os logos
+            logos.forEach(logo => logo.classList.remove('visible')); 
+         
+            const activeLogo = document.getElementById(logoIdItem);
 
-             if (logoId) {
-                 const activeLogo = document.getElementById(logoId);
+            activeLogo.classList.add('visible');
                  
-                 if (activeLogo) {
-
-                     activeLogo.classList.add('visible'); // Mostra o logo correspondente
-                 }
-             }
-
-            // Remove o efeito de fade-in após a troca da imagem
-            setTimeout(() => {
-                mainItem.classList.remove('fade-in');
-            }, 50); // O tempo aqui deve ser igual ao da transição do fade-in
-        }, 50); // Tempo de espera para garantir que o efeito de fade-in seja visível     
+            mainItem.classList.remove('fade-in');
+          
+        }, 100);   
     });
 });
