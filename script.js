@@ -161,3 +161,18 @@ function buttonRight() {
 
 buttonL.addEventListener('click', buttonLeft)
 buttonR.addEventListener('click', buttonRight)
+
+//////////////////////////////////////////////////////////////////
+
+function scrollToSection(id) {
+    const element = document.querySelector('.'+id)
+
+    if (id == 'hqs') {
+        window.scrollTo( {
+            top: element.offsetTop - 100,
+            behavior:  'smooth' })
+    } else {
+        element.scrollIntoView( {behavior:  'smooth' })
+    }
+
+}

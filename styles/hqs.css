@@ -31,7 +31,6 @@
 
 .img_hq {
     opacity: 0;
-    width: 26%;
     position: absolute;
     box-shadow: rgba(30, 30, 30, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -111,6 +110,10 @@
         margin-top: -50px;
     }
 
+    .img_hq {
+        width: 26%;
+    }
+
     .hqs #scroll_hqs #buttons_hqs {
         width: 530px;
         height: 20px;
@@ -152,16 +155,21 @@
     }
 
     .hqs #scroll_hqs {
-        width: 170px;
+        width: 50%;
+        margin-bottom: 270px;
     }
 
     .hqs #scroll_hqs #buttons_hqs {
         width: 220px;
-        margin-top: 124px;
+        top: 190px;
     }
 
     .hq_button {
         font-size: 21pt;
+    }
+
+    .img_hq {
+        width: 42%;
     }
 
     .hqs #describe_hqs h2{
