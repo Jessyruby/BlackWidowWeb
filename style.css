@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
 
-@import url('/styles/header.css');
-@import url('/styles/main-banner.css');
-@import url('/styles/about.css');
-@import url('/styles/hqs.css');
-@import url('/styles/spider.css');
-@import url('/styles/fases.css');
-@import url('/styles/footer.css');
+@import url('styles/header.css');
+@import url('styles/main-banner.css');
+@import url('styles/about.css');
+@import url('styles/hqs.css');
+@import url('styles/spider.css');
+@import url('styles/fases.css');
+@import url('styles/footer.css');
 
 body {
     background: #000;

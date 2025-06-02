@@ -54,7 +54,7 @@
 @media (min-width: 768px) {
 
     .main-banner {
-        background: url('/img/wp6471925-black-widow-3d-desktop-wallpapers.png');
+        background: url('../img/wp6471925-black-widow-3d-desktop-wallpapers.png');
         background-size: cover;
         height: 780px;
     }
@@ -84,7 +84,7 @@
     
     .main-banner {
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-            url('/img/wp6471925-black-widow-3d-desktop-wallpapers.png');
+            url('../img/wp6471925-black-widow-3d-desktop-wallpapers.png');
         background-size: cover;
         height: 600px;
         background-position: center; 
